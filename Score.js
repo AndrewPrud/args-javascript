@@ -10,7 +10,7 @@ if(average >= 92.5) {
     console.log("C");
 } else if (average < 77.5 && average >= 69.5) {
     console.log("D");
-} else if (average <  average <= 69.5) {
+} else if (average <= 69.5) {
     console.log("F");
 }
 
