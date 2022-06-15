@@ -1,10 +1,20 @@
-console.log("hello world");
-let width, height, lengthis, volume;
+console.log("I will find your avarge score! Pls Enter");
+let hm = new Map();
+let ave, add = 0;
 
-width = parseInt(prompt("Enter width"));
-height = parseInt(prompt("Enter height"));
-lengthis = parseInt(prompt("Enter lenght"));
+for(let i = 1; i <= 3; i++){
+    hm.set(i, parseFloat(prompt("Enter Grade " + i + ":")));
+}
 
-volume = width * height * lengthis;
+// find average
+ave = (hm.get(1) + hm.get(2) + hm.get(3))/3;
+console.log("Average:" + ave);
 
-console.log("volume:" + volume);
+// find grade
+if(ave >= 92.5) { console.log("Your grade is A") } else
+if(ave >= 84.5) { console.log("Your grade is B") } else
+if(ave >= 77.5) { console.log("Your grade is C") } else
+if(ave >= 69.5) { console.log("Your grade is D") } else
+{ console.log("Your grade is F") }
+
+// I was going to use foreach. but soo many errors
