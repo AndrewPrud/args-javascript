@@ -4,7 +4,7 @@ let length = parseInt(prompt("Enter length"));
 let volume = length * width * height;
 console.log(volume); */
 
-let score1 = parseFloat(prompt("Enter score 1"));
+/*let score1 = parseFloat(prompt("Enter score 1"));
 let score2 = parseFloat(prompt("Enter score 2"));
 let score3 = parseFloat(prompt("Enter score 3"));
 
@@ -23,4 +23,14 @@ else if (averageGrade >= 69.5){
 }
 else {
     console.log("F " + averageGrade);
+}*/
+
+let amount = parseInt(prompt("Enter # of people"));
+const people = [amount];
+for (let count = 0; count >= amount; count++){
+    people[count] = prompt("Enter name");
+    
 }
+
+
+
